@@ -1,0 +1,135 @@
+•⁠  ⁠{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.actions {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button, select {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:disabled, select:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+select {
+    background-color: white;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.node-panel {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.node-panel h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+    color: #007bff;
+}
+
+.file-container {
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.file-list {
+    list-style: none;
+}
+
+.file-item {
+    padding: 8px 10px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+
+.file-item:hover {
+    background-color: #f8f9fa;
+}
+
+.file-item.selected {
+    background-color: #e7f1ff;
+    border-left: 3px solid #007bff;
+}
+
+.file-item.directory {
+    font-weight: bold;
+}
+
+.file-item.directory::before {
+    content: "📁 ";
+}
+
+.file-item:not(.directory)::before {
+    content: "📄 ";
+}
+
+.loading {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.empty {
+    color: #6c757d;
+    text-align: center;
+    padding: 20px;
+}
+
+.offline {
+    opacity: 0.6;
+    position: relative;
+}
+
+.offline::after {
+    content: "DESCONECTADO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 10;
+}

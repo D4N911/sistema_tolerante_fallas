@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Tolerante a Fallas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sistema Tolerante a Fallas</h1>
+        <p>Nodo: <strong id="node-name">{{ node_name }}</strong></p>
+    </header>
+    
+    <main>
+        <div class="actions">
+            <button id="btn-eliminar" disabled>Eliminar</button>
+            <button id="btn-transferir" disabled>Transferir</button>
+            <select id="select-maquina" disabled>
+                <option value="">Seleccionar máquina...</option>
+                {% for name, info in nodes.items() %}
+                    {% if name != node_name %}
+                    <option value="{{ name }}">{{ name }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="grid-container">
+            {% for name, info in nodes.items() %}
+            <div class="node-panel" id="panel-{{ name }}">
+                <h2>{{ name }}</h2>
+                <div class="file-container" id="files-{{ name }}">
+                    <p class="loading">Cargando...</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nodeName = document.getElementById('node-name').textContent;
+            const btnEliminar = document.getElementById('btn-eliminar');
+            const btnTransferir = document.getElementById('btn-transferir');
+            const selectMaquina = document.getElementById('select-maquina');
+            
+            let selectedFile = null;
+            let selectedNode = null; // Nueva variable para rastrear de qué nodo es el archivo seleccionado
+            
+            // Cargar archivos inicial
+            loadFiles();
+            
+            // Cargar estado de nodos
+            loadNodeStatus();
+            
+            // Actualizar periódicamente
+            setInterval(loadFiles, 5000);
+            setInterval(loadNodeStatus, 5000);
+            
+            function loadNodeStatus() {
+                fetch('/api/status')
+                    .then(response => response.json())
+                    .then(status => {
+                        for (const [node, active] of Object.entries(status)) {
+                            const panel = document.getElementById(`panel-${node}`);
+                            if (panel) {
+                                if (active) {
+                                    panel.classList.remove('offline');
+                                } else {
+                                    panel.classList.add('offline');
+                                }
+                            }
+                        }
+                    })
+                    .catch(error => console.error('Error al cargar estado:', error));
+            }
+            
+            function loadFiles() {
+                // Primero, cargar estado de nodos para saber cuáles están activos
+                fetch('/api/status')
+                    .then(response => response.json())
+                    .then(status => {
+                        // Para cada nodo, cargar sus archivos
+                        for (const [node, active] of Object.entries(status)) {
+                            const fileContainer = document.getElementById(`files-${node}`);
+                            
+                            // Si el nodo está desconectado, mostrar mensaje
+                            if (!active) {
+                                fileContainer.innerHTML = '<p class="empty">DESCONECTADO</p>';
+                                continue;
+                            }
+                            
+                            // Determinar la URL según si es el nodo local o remoto
+                            const url = (node === nodeName) ? 
+                                '/api/files' : 
+                                `/api/node_files/${node}`;
+                            
+                            // Mostrar "Cargando..." mientras se obtienen los archivos
+                            fileContainer.innerHTML = '<p class="loading">Cargando...</p>';
+                            
+                            // Obtener los archivos
+                            fetch(url)
+                                .then(response => response.json())
+                                .then(files => {
+                                    fileContainer.innerHTML = '';
+                                    
+                                    if (files.length === 0) {
+                                        fileContainer.innerHTML = '<p class="empty">No hay archivos</p>';
+                                    } else {
+                                        const fileList = document.createElement('ul');
+                                        fileList.className = 'file-list';
+                                        
+                                        files.forEach(file => {
+                                            const item = document.createElement('li');
+                                            item.className = 'file-item';
+                                            if (file.is_dir) {
+                                                item.className += ' directory';
+                                            }
+                                            
+                                            item.textContent = file.name;
+                                            item.dataset.name = file.name;
+                                            item.dataset.isDir = file.is_dir;
+                                            item.dataset.node = node;
+                                            
+                                            item.addEventListener('click', function() {
+                                                // Deseleccionar ítem anterior
+                                                document.querySelectorAll('.file-item.selected').forEach(el => {
+                                                    el.classList.remove('selected');
+                                                });
+                                                
+                                                // Seleccionar este ítem
+                                                item.classList.add('selected');
+                                                selectedFile = file.name;
+                                                selectedNode = node;
+                                                
+                                                // Solo habilitar botones si el archivo es del nodo local
+                                                if (node === nodeName) {
+                                                    btnEliminar.disabled = false;
+                                                    btnTransferir.disabled = false;
+                                                    selectMaquina.disabled = false;
+                                                } else {
+                                                    btnEliminar.disabled = true;
+                                                    btnTransferir.disabled = true;
+                                                    selectMaquina.disabled = true;
+                                                }
+                                            });
+                                            
+                                            fileList.appendChild(item);
+                                        });
+                                        
+                                        fileContainer.appendChild(fileList);
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error(`Error al cargar archivos de ${node}:`, error);
+                                    fileContainer.innerHTML = '<p class="error">Error al cargar archivos</p>';
+                                });
+                        }
+                    })
+                    .catch(error => console.error('Error al cargar estado:', error));
+            }
+            
+            btnEliminar.addEventListener('click', function() {
+                if (!selectedFile) return;
+                
+                if (confirm(`¿Está seguro de eliminar "${selectedFile}"?`)) {
+                    fetch('/api/delete', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            filename: selectedFile
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'ok') {
+                            alert('Archivo eliminado correctamente');
+                            loadFiles();
+                        } else {
+                            alert('Error al eliminar archivo: ' + (data.message || 'Error desconocido'));
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Error al comunicarse con el servidor');
+                    });
+                }
+            });
+            
+            btnTransferir.addEventListener('click', function() {
+                if (!selectedFile || selectMaquina.value === '') {
+                    alert('Debe seleccionar un archivo y una máquina destino');
+                    return;
+                }
+                
+                fetch('/api/transfer', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        filename: selectedFile,
+                        target_node: selectMaquina.value
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'ok') {
+                        alert('Archivo transferido correctamente');
+                    } else {
+                        alert('Error al transferir archivo: ' + (data.message || 'Error desconocido'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al comunicarse con el servidor');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

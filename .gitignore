@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de configuración local
+offline_queue.json
+sync_status.json
+sistema_tolerante_fallas_files/
+
+# Entornos virtuales
+venv/
+env/
+ENV/ 
