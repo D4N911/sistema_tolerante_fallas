@@ -11684,3 +11684,55 @@
 2025-05-20 17:02:53,090 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:53] "GET /api/status HTTP/1.1" 200 -
 2025-05-20 17:02:53,091 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:53] "GET /api/status HTTP/1.1" 200 -
 2025-05-20 17:02:53,100 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:53] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:20:03,112 - sistema - INFO - Nombre del host: MacBook-Air-de-Daniel.local
+2025-05-20 17:20:03,113 - sistema - INFO - Usando IP para MacOS1: 172.26.163.109
+2025-05-20 17:20:03,113 - sistema - INFO - IP seleccionada: 172.26.163.109
+2025-05-20 17:20:03,113 - sistema - INFO - Este nodo se identificó como: MacOS1
+2025-05-20 17:20:03,113 - sistema - INFO - Puerto web: 8080
+2025-05-20 17:20:03,113 - sistema - INFO - Puerto de red: 9090
+2025-05-20 17:20:03,113 - sistema - INFO - Directorio compartido: /Users/d4n911/sistema_tolerante_fallas_files
+2025-05-20 17:20:03,113 - sistema - INFO - Archivo de log: /Users/d4n911/sistema_tolerante_fallas_files/operations.log
+2025-05-20 17:20:03,113 - sistema - INFO - Intervalo de heartbeat: 10 segundos
+2025-05-20 17:20:03,113 - sistema - INFO - Timeout de nodo: 30 segundos
+2025-05-20 17:20:03,113 - sistema - INFO - Timeout de red: 10 segundos
+2025-05-20 17:20:03,113 - sistema - INFO - Máximo de reintentos: 3
+2025-05-20 17:20:03,113 - sistema - INFO - Tamaño máximo de transferencia directa: 10485760 bytes
+2025-05-20 17:20:03,114 - sistema.network - INFO - Inicializando NetworkManager para nodo MacOS1
+2025-05-20 17:20:03,114 - sistema.network - INFO - Puerto de red: 9090
+2025-05-20 17:20:03,114 - sistema.network - INFO - Nodos configurados: ['MacOS1', 'MacOS2', 'Ubuntu1', 'Ubuntu2']
+2025-05-20 17:20:03,115 - sistema.network - INFO - Iniciando threads de red...
+2025-05-20 17:20:03,115 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:20:03,115 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:20:03,116 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:20:03,116 - sistema.network - INFO - Threads de red iniciados
+2025-05-20 17:20:03,116 - sistema.network - INFO - Servidor iniciado en el puerto 9090
+2025-05-20 17:20:03,116 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:20:03,116 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:20:03,116 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:20:03,122 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.26.163.109:8080
+2025-05-20 17:20:03,122 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 17:20:03,229 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:20:03,230 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:20:03,640 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:20:03,641 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:20:04,235 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:20:04,263 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:20:04,263 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:20:04,646 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:20:04,660 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:20:04,661 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:20:05,266 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:20:05,291 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:20:05,292 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:20:05,666 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:20:05,679 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:20:05,679 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:20:06,297 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:20:06,309 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:20:06,683 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:20:06,711 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:20:07,101 - sistema.network - INFO - Deteniendo NetworkManager...
+2025-05-20 17:20:07,101 - sistema.network - INFO - NetworkManager detenido

@@ -15,12 +15,15 @@ if ! command -v pip3 &> /dev/null; then
 fi
 
 # Instalar dependencias del sistema
-sudo apt-get install -y python3-dev build-essential
+sudo apt-get install -y python3-dev build-essential lsof
 
 # Instalar dependencias de Python
 pip3 install -r requirements.txt
 
 # Crear directorio para archivos compartidos
 mkdir -p ~/sistema_tolerante_fallas_files
+
+# Dar permisos de ejecución a start.sh
+chmod +x start.sh
 
 echo "Instalación completada. Ahora puedes ejecutar ./start.sh" 
