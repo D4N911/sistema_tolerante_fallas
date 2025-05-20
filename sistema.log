@@ -11352,3 +11352,335 @@
 2025-05-20 16:34:13,082 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
 2025-05-20 16:34:14,944 - sistema.network - INFO - Deteniendo NetworkManager...
 2025-05-20 16:34:14,945 - sistema.network - INFO - NetworkManager detenido
+2025-05-20 17:01:59,580 - sistema - INFO - Nombre del host: MacBook-Air-de-Daniel.local
+2025-05-20 17:01:59,581 - sistema - INFO - Usando IP para MacOS1: 172.26.163.109
+2025-05-20 17:01:59,581 - sistema - INFO - IP seleccionada: 172.26.163.109
+2025-05-20 17:01:59,581 - sistema - INFO - Este nodo se identificó como: MacOS1
+2025-05-20 17:01:59,581 - sistema - INFO - Puerto web: 8080
+2025-05-20 17:01:59,581 - sistema - INFO - Puerto de red: 9090
+2025-05-20 17:01:59,581 - sistema - INFO - Directorio compartido: /Users/d4n911/sistema_tolerante_fallas_files
+2025-05-20 17:01:59,581 - sistema - INFO - Archivo de log: /Users/d4n911/sistema_tolerante_fallas_files/operations.log
+2025-05-20 17:01:59,581 - sistema - INFO - Intervalo de heartbeat: 10 segundos
+2025-05-20 17:01:59,581 - sistema - INFO - Timeout de nodo: 30 segundos
+2025-05-20 17:01:59,581 - sistema - INFO - Timeout de red: 10 segundos
+2025-05-20 17:01:59,581 - sistema - INFO - Máximo de reintentos: 3
+2025-05-20 17:01:59,581 - sistema - INFO - Tamaño máximo de transferencia directa: 10485760 bytes
+2025-05-20 17:01:59,584 - sistema.network - INFO - Inicializando NetworkManager para nodo MacOS1
+2025-05-20 17:01:59,584 - sistema.network - INFO - Puerto de red: 9090
+2025-05-20 17:01:59,585 - sistema.network - INFO - Nodos configurados: ['MacOS1', 'MacOS2', 'Ubuntu1', 'Ubuntu2']
+2025-05-20 17:01:59,586 - sistema.network - INFO - Iniciando threads de red...
+2025-05-20 17:01:59,586 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:01:59,586 - sistema.network - INFO - Servidor iniciado en el puerto 9090
+2025-05-20 17:01:59,586 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:01:59,586 - sistema.network - INFO - Threads de red iniciados
+2025-05-20 17:01:59,586 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:01:59,587 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:01:59,587 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:01:59,589 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:01:59,607 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.26.163.109:8080
+2025-05-20 17:01:59,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 17:01:59,610 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:01:59,610 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:02:00,617 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:00,642 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:00,642 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:02:00,668 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:00,668 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:01,647 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:01,673 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:01,674 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:01,674 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:02:02,679 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:02,703 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:02,730 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:02,730 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:03,061 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:03] "GET / HTTP/1.1" 200 -
+2025-05-20 17:02:03,070 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-05-20 17:02:03,070 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-05-20 17:02:03,072 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:03] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:03,073 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:03] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:03,080 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:03,081 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:03,083 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:03] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:03,089 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:03,089 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:03,735 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:03,760 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:03,760 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:04,095 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:04,110 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:04,110 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:04,761 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:04,787 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:05,115 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:05,200 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:05,201 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:06,206 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:06,233 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:06,234 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:06] "GET /api/node_files/MacOS2 HTTP/1.1" 200 -
+2025-05-20 17:02:08,080 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:08] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:08,081 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:08] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:08,088 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:08,089 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:08] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:09,592 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:02:09,593 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:09,594 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:09,594 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:09,594 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:02:09,594 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:09,595 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:02:09,595 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:09,606 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:09,606 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:09,713 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:09,713 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:02:10,595 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:10,611 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:10,621 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:10,622 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:10,719 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:10,744 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:10,744 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:02:11,627 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:11,698 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:11,698 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:11,747 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:11,775 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:11,775 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:02:12,703 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:12,728 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:12,780 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:12,804 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:13,081 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:13] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:13,081 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:13] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:13,082 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:13,082 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:13,087 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:13,088 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:13] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:14,087 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:18,082 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:18] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:18,083 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:18] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:18,091 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:18,091 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:18,092 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:18] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:18,092 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:19,094 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:19,596 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:19,597 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:19,600 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:02:19,601 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:19,601 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:02:19,602 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:19,602 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:02:19,602 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:19,635 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:19,636 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:19,711 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:19,711 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:02:20,597 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:20,598 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:20,598 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:20,641 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:20,666 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:20,667 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:20,715 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:20,740 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:20,741 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:02:21,603 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:21,669 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:21,697 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:21,698 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:21,745 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:21,773 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:21,774 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:02:22,703 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:22,717 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:22,774 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:22,806 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:23,083 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:23] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:23,087 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:23] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:23,089 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:23,089 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:23,096 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:23,098 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:23] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:24,090 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:24,090 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:24,091 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:25,093 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:28,085 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:28] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:28,090 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:28] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:28,095 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:28] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:28,095 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:28,095 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:28,097 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:29,096 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:29,097 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:29,100 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:29,595 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:29,599 - sistema.network - WARNING - Nodo Ubuntu2 ha dejado de responder
+2025-05-20 17:02:29,604 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:29,604 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:29,606 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:02:29,606 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:29,606 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:02:29,606 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:29,607 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:02:29,607 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:29,635 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:29,635 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:29,708 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:29,708 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:02:30,102 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:30,600 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:30,601 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:30,608 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:30,637 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:30,647 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:30,647 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:30,712 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:30,745 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:30,746 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:02:31,604 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:31,605 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:31,605 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:31,652 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:31,664 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:31,664 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:31,751 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:31,774 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:31,774 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:02:32,607 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:32,669 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:32,681 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:32,778 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:33,098 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:33,099 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:33,645 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:34,093 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:34,094 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:34,102 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:35,095 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:35,095 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:35,096 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:36,102 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:38,099 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:38,099 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:39,102 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:39,103 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:39,104 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:39,597 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:39,598 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:39,608 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:39,608 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:39,609 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:02:39,609 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:39,609 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:02:39,609 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:39,610 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:02:39,610 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:39,622 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:39,623 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:39,637 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:39,637 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:02:40,105 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:40,105 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:40,106 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:40,603 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:40,609 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:40,610 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:40,610 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:40,624 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:40,635 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:40,636 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:40,642 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:40,656 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:40,657 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:02:41,106 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:41,607 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:41,608 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:41,615 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:41,641 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:41,662 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:41,689 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:41,689 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:02:41,797 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:41,798 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:42,608 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:42,612 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:42,695 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:42,721 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:42,802 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:42,814 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:44,104 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:44,105 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:45,098 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:45,099 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:45,110 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:46,104 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:46,104 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:46,106 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/node_files/Ubuntu2 HTTP/1.1" 200 -
+2025-05-20 17:02:46,115 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:46,121 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:46,128 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:46,132 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:46,135 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:46,138 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:46,142 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:46,145 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:46,148 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:46] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:48,088 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:48] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:48,093 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:48] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:48,097 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:48] "GET /api/files HTTP/1.1" 200 -
+2025-05-20 17:02:49,106 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:49,107 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:49,611 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:49,612 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 1)
+2025-05-20 17:02:49,614 - sistema.network - DEBUG - Enviando heartbeat a MacOS2
+2025-05-20 17:02:49,615 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:49,615 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu1
+2025-05-20 17:02:49,615 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:49,615 - sistema.network - DEBUG - Enviando heartbeat a Ubuntu2
+2025-05-20 17:02:49,616 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:49,640 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:49,640 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 1)
+2025-05-20 17:02:49,733 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:49,733 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 1)
+2025-05-20 17:02:50,108 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:50,108 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:50,112 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:50,605 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:50,606 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:50,611 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:50,611 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 2)
+2025-05-20 17:02:50,617 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:50,645 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:50,657 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:50,657 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 2)
+2025-05-20 17:02:50,736 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:50,750 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:50,750 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 2)
+2025-05-20 17:02:51,108 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:51,110 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:51] "GET /api/node_files/Ubuntu2 HTTP/1.1" 200 -
+2025-05-20 17:02:51,113 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:51,611 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:51,616 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:51,617 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:51,617 - sistema.network - INFO - Reintentando conexión con Ubuntu2 (intento 3)
+2025-05-20 17:02:51,658 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:51,756 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:51,766 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:51,766 - sistema.network - INFO - Reintentando conexión con MacOS2 (intento 3)
+2025-05-20 17:02:51,770 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:51,770 - sistema.network - INFO - Reintentando conexión con Ubuntu1 (intento 3)
+2025-05-20 17:02:52,614 - sistema.network - ERROR - Timeout al conectar con Ubuntu2
+2025-05-20 17:02:52,622 - sistema.network - DEBUG - Conectando a Ubuntu2 (172.25.181.66:9090)
+2025-05-20 17:02:52,771 - sistema.network - DEBUG - Conectando a MacOS2 (172.26.167.45:9090)
+2025-05-20 17:02:52,771 - sistema.network - DEBUG - Conectando a Ubuntu1 (172.31.1.164:9090)
+2025-05-20 17:02:52,780 - sistema.network - ERROR - Conexión rechazada por MacOS2
+2025-05-20 17:02:52,801 - sistema.network - ERROR - Conexión rechazada por Ubuntu1
+2025-05-20 17:02:53,090 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:53] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:53,091 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:53] "GET /api/status HTTP/1.1" 200 -
+2025-05-20 17:02:53,100 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 17:02:53] "GET /api/files HTTP/1.1" 200 -
